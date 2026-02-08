@@ -188,6 +188,6 @@ Follow the instructions provided by the `pre.sh` script.
 
 ### Agent enrollment
 
-Because we're not using a real Wazuh Manager, we cannot register new agents. 
+Because we're not using a real BOSSS XDR Manager, we cannot register new agents. 
 Instead, Imposter (the mock server) will provide mocked responds to valid API 
 requests, as if it were the real Wazuh server.

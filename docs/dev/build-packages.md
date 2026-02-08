@@ -105,7 +105,7 @@ yarn build
 5. Clone the [wazuh-dashboard-security-analytics](https://github.com/wazuh/wazuh-dashboard-security-analytics.git) repository in the `wazuh-dashboard/plugins` folder, move into the `wazuh-dashboard-security-analytics/` folder, and build the plugin:
 
 > The yarn build command requires an entry specifying the OpenSearch Dashboard version. This version can be obtained from the `package.json` file of the plugin.
-> Replace the `GIT_REF` by the branch or tag for the Wazuh security analytics plugin, e.g. `v5.0.0`.
+> Replace the `GIT_REF` by the branch or tag for the BOSSS XDR security analytics plugin, e.g. `v5.0.0`.
 
 ```bash
 GIT_REF=<REPLACE_PLACEHOLDER>

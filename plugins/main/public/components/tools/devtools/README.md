@@ -1,6 +1,6 @@
-# DevTools (Wazuh Dashboard)
+# DevTools (BOSSS XDR Dashboard)
 
-Developer console to interact with the Wazuh API from OpenSearch Dashboards. It provides a request editor (left) and a read‑only response viewer (right), with endpoint and parameter autocomplete.
+Developer console to interact with the BOSSS XDR API from OpenSearch Dashboards. It provides a request editor (left) and a read‑only response viewer (right), with endpoint and parameter autocomplete.
 
 - Root component: `devtools-old.tsx` (UI container)
 - Headless library: `lib/` (actions, hints, grouping, services)

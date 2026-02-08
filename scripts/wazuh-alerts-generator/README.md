@@ -1,6 +1,6 @@
 # Wazuh alerts generator
 
-This is a utility for generating sample Wazuh security alerts. 
+This is a utility for generating sample BOSSS XDR security alerts. 
 
 The code is based in a feature included in the Wazuh plugin for Wazuh dashboard.
 

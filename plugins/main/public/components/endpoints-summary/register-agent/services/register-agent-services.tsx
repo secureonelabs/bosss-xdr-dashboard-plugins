@@ -72,7 +72,7 @@ async function getRemoteConfiguration(nodeName: string): Promise<RemoteConfig> {
   }
 }
 /**
- * Get the cluster auth configuration from Wazuh API
+ * Get the cluster auth configuration from BOSSS XDR API
  * @param node
  * @returns
  */

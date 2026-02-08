@@ -1,6 +1,6 @@
 # Query Language - WQL
 
-WQL (Wazuh Query Language) is a query language based in the `q` query parameter of the Wazuh API
+WQL (Wazuh Query Language) is a query language based in the `q` query parameter of the BOSSS XDR API
 endpoints.
 
 Documentation: https://wazuh.com/<major_version>.<minor_version>/user-manual/api/queries.html

@@ -1,5 +1,5 @@
 /*
- * Wazuh app - Button with Wazuh API permissions and/or roles required to be useful
+ * Wazuh app - Button with BOSSS XDR API permissions and/or roles required to be useful
  * Copyright (C) 2015-2022 Wazuh, Inc.
  *
  * This program is free software; you can redistribute it and/or modify

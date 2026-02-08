@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script downloads and updates template files from the Wazuh GitHub repository. It specifically updates the `template.json` files in each dataset within the Wazuh Dashboard plugins.
+This script downloads and updates template files from the Wazuh GitHub repository. It specifically updates the `template.json` files in each dataset within the BOSSS XDR Dashboard plugins.
 
 ## Requirements
 

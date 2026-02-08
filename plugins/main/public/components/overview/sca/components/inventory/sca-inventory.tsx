@@ -16,7 +16,7 @@ import { withErrorBoundary } from '../../../../common/hocs';
 import { compose } from 'redux';
 
 /**
- * @fileoverview SCA Inventory component for Wazuh Dashboard
+ * @fileoverview SCA Inventory component for BOSSS XDR Dashboard
  *
  * This component displays the Security Configuration Assessment (SCA) inventory,
  * which shows the security policies and checks compliance status for Wazuh agents.
@@ -30,7 +30,7 @@ import { compose } from 'redux';
  * - Configuration assessment results for each agent
  * - Detailed reports of policy checks and remediation suggestions
  *
- * This component is part of the Configuration Assessment module in Wazuh Dashboard and helps
+ * This component is part of the Configuration Assessment module in BOSSS XDR Dashboard and helps
  * security teams ensure systems are properly configured according to security
  * best practices and compliance requirements.
  */

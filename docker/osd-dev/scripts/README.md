@@ -1,6 +1,6 @@
 # Development Scripts - TypeScript
 
-This directory contains the TypeScript-based development scripts for the Wazuh Dashboard Plugins development environment.
+This directory contains the TypeScript-based development scripts for the BOSSS XDR Dashboard Plugins development environment.
 
 ## Structure
 

@@ -26,7 +26,7 @@ It is useful for both security analysts and technical users who want to ensure t
 
 ## 🔄 How does the data get here?
 
-This component retrieves data directly from the **Wazuh Indexer**, which stores the results of SCA scans **persisted by the agent**.
+This component retrieves data directly from the **BOSSS XDR Indexer**, which stores the results of SCA scans **persisted by the agent**.
 
 As introduced in the feature [States persistence (#29533)](https://github.com/wazuh/wazuh/issues/29533):
 

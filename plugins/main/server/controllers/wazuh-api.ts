@@ -156,7 +156,7 @@ export class WazuhApiCtrl {
         );
       }
 
-      // If we have a valid response from the Wazuh API
+      // If we have a valid response from the BOSSS XDR API
       try {
         const { manager, node, cluster } =
           await context.wazuh_core.manageHosts.getRegistryDataByHost(
@@ -176,7 +176,7 @@ export class WazuhApiCtrl {
           },
         });
       } catch (error) {
-        // If we have an invalid response from the Wazuh API
+        // If we have an invalid response from the BOSSS XDR API
         throw new Error(
           responseClusterInfo.detail || `${api.url}:${api.port} is unreachable`,
         );
@@ -293,7 +293,7 @@ export class WazuhApiCtrl {
       // const notValid = this.validateCheckApiParams(request.body);
       // if (notValid) return ErrorResponse(notValid, 3003, HTTP_STATUS_CODES.INTERNAL_SERVER_ERROR, response);
       context.wazuh.logger.debug(`${request.body.id} is valid`);
-      // Check if a Wazuh API id is given (already stored API)
+      // Check if a BOSSS XDR API id is given (already stored API)
       const data = await context.wazuh_core.manageHosts.get(request.body.id, {
         excludePassword: true,
       });
@@ -465,7 +465,7 @@ export class WazuhApiCtrl {
   }
 
   /**
-   * This performs a request over Wazuh API and returns its response
+   * This performs a request over BOSSS XDR API and returns its response
    * @param {String} method Method: GET, PUT, POST, DELETE
    * @param {String} path API route
    * @param {Object} data data and params to perform the request
@@ -757,7 +757,7 @@ export class WazuhApiCtrl {
   }
 
   /**
-   * Get full data on CSV format from a list Wazuh API endpoint
+   * Get full data on CSV format from a list BOSSS XDR API endpoint
    * @param {Object} ctx
    * @param {Object} request
    * @param {Object} response
@@ -932,7 +932,7 @@ export class WazuhApiCtrl {
         throw new Error('No results');
       } else {
         throw new Error(
-          `An error occurred fetching data from the Wazuh API${
+          `An error occurred fetching data from the BOSSS XDR API${
             output && output.data && output.data.detail
               ? `: ${output.body.detail}`
               : ''

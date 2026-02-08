@@ -195,12 +195,12 @@ wazuh:wazuh
 
 ## Notes
 
-`Wazuh Indexer` and `Wazuh Dashboard` are both a redistribution of a
+`BOSSS XDR Indexer` and `BOSSS XDR Dashboard` are both a redistribution of a
 version of the OpenSearch Stack. We will only create environments for
 the versions of OpenSearch which will be included into a Wazuh
 version.
 
-We must use official `Wazuh Indexer` and `Wazuh Dashboard` images for
+We must use official `BOSSS XDR Indexer` and `BOSSS XDR Dashboard` images for
 testing!
 
 This environment will start a working deployment with:

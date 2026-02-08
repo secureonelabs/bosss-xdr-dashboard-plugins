@@ -20,7 +20,7 @@ export function WazuhApiRoutes(router: IRouter) {
       ctrl.checkStoredAPI(context, request, response),
   );
 
-  // Check if credentials on POST connect to Wazuh API. Not storing them!
+  // Check if credentials on POST connect to BOSSS XDR API. Not storing them!
   // Returns if the wazuh-api configuration received in the POST body will work
   router.post(
     {
@@ -79,7 +79,7 @@ export function WazuhApiRoutes(router: IRouter) {
       ctrl.requestApi(context, request, response),
   );
 
-  // Returns data from the Wazuh API on CSV readable format
+  // Returns data from the BOSSS XDR API on CSV readable format
   router.post(
     {
       path: '/api/csv',

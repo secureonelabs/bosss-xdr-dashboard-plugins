@@ -12,10 +12,10 @@ Every time a page is loaded, the UpdatesNotification component is rendered. The 
 
 1.  **User Preferences:** It retrieves information from the saved object containing user preferences to determine if the user has chosen to display more notifications about new updates and to obtain the latest updates that the user dismissed in a notification.
 
-2.  **Available Updates:** It retrieves the available updates for each available API. To determine where to retrieve the information, it first checks the session storage for the key `checkUpdates`. If the value is `executed`, it then searches for available updates in a saved object; otherwise, it queries the Wazuh API and makes a request for each available API, finally saving the information in the saved object and setting the session storage `checkUpdates` to `executed`.
+2.  **Available Updates:** It retrieves the available updates for each available API. To determine where to retrieve the information, it first checks the session storage for the key `checkUpdates`. If the value is `executed`, it then searches for available updates in a saved object; otherwise, it queries the BOSSS XDR API and makes a request for each available API, finally saving the information in the saved object and setting the session storage `checkUpdates` to `executed`.
     The endpoint has two parameters:
-    `query_api`: Determines whether the Check Updates plugin retrieves data from the Wazuh API or from a saved object.
-    `force_query`: When `query_api` is set to true, it determines whether the Wazuh API internally obtains the data or fetches it from the CTI Service.
+    `query_api`: Determines whether the Check Updates plugin retrieves data from the BOSSS XDR API or from a saved object.
+    `force_query`: When `query_api` is set to true, it determines whether the BOSSS XDR API internally obtains the data or fetches it from the CTI Service.
 
 If the user had not chosen not to receive notifications of new updates and if the new updates are different from the last ones dismissed, then the component renders a bottom bar to notify that there are new updates.
 
@@ -30,7 +30,7 @@ The plugin provides a function for fetching the available updates for each API. 
 1.  The user logs in.
 2.  The main Wazuh plugin is loaded and renders the UpdatesNotification component from the Check Updates plugin.
 3.  The `UpdatesNotification` component checks the user's preferences (stored in a saved object) to determine if the user has dismissed notifications about new updates. If the user has dismissed them, the component returns nothing; otherwise, it proceeds to the next steps.
-4.  The UpdatesNotification component checks the `checkUpdates` value in the browser's session storage to determine if a query about available updates from the Wazuh Server API has already been executed. Since the user has just logged in, this value will not exist in the session storage.
+4.  The UpdatesNotification component checks the `checkUpdates` value in the browser's session storage to determine if a query about available updates from the BOSSS XDR Server API has already been executed. Since the user has just logged in, this value will not exist in the session storage.
 5.  The component makes a request to the Check Updates plugin API with the `query_api` parameter set to true and `force_query` set to false. The `checkUpdates` value in the session storage is updated to `true`.
 6.  The updates are stored in a saved object for future reference.
 7.  It's possible that the user has dismissed specific updates. In such cases, the dismissed updates are compared with the updates retrieved from the API. If they match, the component returns nothing; otherwise, it proceeds to the next steps.
@@ -48,9 +48,9 @@ The plugin provides a function for fetching the available updates for each API. 
   - **Up to date:** The server is up to date with the latest available version.
   - **Available updates:** There are updates available. In this case, you can view the details of the available updates by clicking an icon, and a Flyout will open with the details.
   - **Checking updates disabled:** The server has the service for checking updates disabled.
-  - **Error checking updates:** An error occurred when trying to query the Wazuh Server API. In this case, a tooltip will display the error message.
+  - **Error checking updates:** An error occurred when trying to query the BOSSS XDR Server API. In this case, a tooltip will display the error message.
 
-3. The user has the option to force a direct request for available updates to the Wazuh Server API instead of querying them in the saved object. To do this, they can click the "Check updates" button. If there are any changes when retrieving the information, the results will be reflected in the table.
+3. The user has the option to force a direct request for available updates to the BOSSS XDR Server API instead of querying them in the saved object. To do this, they can click the "Check updates" button. If there are any changes when retrieving the information, the results will be reflected in the table.
 4. The user can also modify their preferences (stored in a saved object) regarding whether they want to continue receiving notifications about new updates.
 
 ## Data Storage
@@ -59,7 +59,7 @@ The data managed by the plugin is stored and queried in saved objects. There are
 
 ### 1. Available Updates
 
-The saved object of type "wazuh-check-updates-available-updates" stores the available updates for each API and the last date when a request was made to the Wazuh API to fetch the data. There is a single object of this type for the entire application, shared among all users.
+The saved object of type "wazuh-check-updates-available-updates" stores the available updates for each API and the last date when a request was made to the BOSSS XDR API to fetch the data. There is a single object of this type for the entire application, shared among all users.
 
 ### 2. User Preferences
 

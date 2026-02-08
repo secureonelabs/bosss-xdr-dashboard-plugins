@@ -124,7 +124,7 @@ or use the through the GitHub web.
 
 ⚠️ This is done by the bump script.
 
-We have a script to update the files of the `plugins/main` that have information about the Wazuh API. This script uses the API specification
+We have a script to update the files of the `plugins/main` that have information about the BOSSS XDR API. This script uses the API specification
 file that is stored in the GitHub repository of [wazuh/wazuh](https://github.com/wazuh/wazuh) repository.
 
 ```console

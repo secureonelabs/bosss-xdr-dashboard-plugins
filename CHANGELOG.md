@@ -162,7 +162,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed missing provider and queue_size fields in whodata configuration [#7596](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7596)
 - Fixed an error that caused PDF report tables to overflow the page width [#7630](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7630)
 - Fixed TypeError when changing API host ID in wazuh.yml configuration [#7611](https://github.com/wazuh/wazuh-dashboard-plugins/issues/7611)
-- Fixed behavior and appearance alignment with OpenSearch (Wazuh Indexer) Dev Tools [#7669](https://github.com/wazuh/wazuh-dashboard-plugins/issues/7669)
+- Fixed behavior and appearance alignment with OpenSearch (BOSSS XDR Indexer) Dev Tools [#7669](https://github.com/wazuh/wazuh-dashboard-plugins/issues/7669)
 
 ## Wazuh v4.13.1 - OpenSearch Dashboards 2.19.2 - Revision 01
 
@@ -350,7 +350,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed filter by value in document details in safari [#7151](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7151)
 - Fixed error message to prevent pass no strings to the wazuh logger [#7167](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7167)
 - Fixed the rendering of the `data.vunerability.reference` in the table and flyout [#7177](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7177)
-- Fixed incorrect or empty Wazuh API version displayed after upgrade [#440](https://github.com/wazuh/wazuh-dashboard/issues/440)
+- Fixed incorrect or empty BOSSS XDR API version displayed after upgrade [#440](https://github.com/wazuh/wazuh-dashboard/issues/440)
 - Fixed typo in flyout title for available updates [#7235](https://github.com/wazuh/wazuh-dashboard-plugins/pull/7235)
 
 ### Removed
@@ -825,16 +825,16 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 ### Changed
 
-- Changed the HTTP verb from `GET` to `POST` in the requests to log in to the Wazuh API [#4103](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4103)
+- Changed the HTTP verb from `GET` to `POST` in the requests to log in to the BOSSS XDR API [#4103](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4103)
 - Changed the endpoint that updates the plugin configuration to support updating multiple settings at once. [#4501](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4501)
 - Improved alerts summary performance [#4376](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4376) [#5071](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5071) [#5131](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5131)
 - Improved the setting's description for the plugin displayed in the UI and the configuration file. [#4501](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4501)
 - Improved `Agents Overview` performance [#4363](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4363) [#5076](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5076)
-- Improved the message displayed when there is a versions mismatch between the Wazuh API and the Wazuh app [#4529](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4529) [#4964](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4964)
+- Improved the message displayed when there is a versions mismatch between the BOSSS XDR API and the Wazuh app [#4529](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4529) [#4964](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4964)
 - Updated operating systems' information in the 'Deploy new agent' section. [#4851](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4851)
-- Updated and unified the fetching and rendering of the SCA checks results due to changes in the Wazuh API [#5031](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5031)
-- Updated the `Agent details` component to the changes in the Wazuh API response. [#3874](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3874)
-- Updated the `Last vulnerability scan` component to the changes in the Wazuh API response [#4975](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4975)
+- Updated and unified the fetching and rendering of the SCA checks results due to changes in the BOSSS XDR API [#5031](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5031)
+- Updated the `Agent details` component to the changes in the BOSSS XDR API response. [#3874](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3874)
+- Updated the `Last vulnerability scan` component to the changes in the BOSSS XDR API response [#4975](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4975)
 - Updated the `winston` dependency to `3.5.1` [#4985](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4985)
 - Updated the `mocha` dependency to `10.1.0` [#5062](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5062)
 - Updated the `pdfmake` dependency to `0.2.7` [#5062](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5062)
@@ -848,7 +848,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed a bug where the Wazuh logo was used instead of the custom one [#4539](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4539)
 - Fixed rendering problems of the `Agent Overview` section in low resolutions [#4516](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4516)
 - Fixed issue when logging out from Wazuh when SAML is enabled [#4595](https://github.com/wazuh/wazuh-dashboard-plugins/issues/4595)
-- Fixed server errors with code 500 when the Wazuh API is not reachable / up. [#4710](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4710) [#4728](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4728) [#4971](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4971)
+- Fixed server errors with code 500 when the BOSSS XDR API is not reachable / up. [#4710](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4710) [#4728](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4728) [#4971](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4971)
 - Fixed pagination to SCA table [#4653](https://github.com/wazuh/wazuh-dashboard-plugins/issues/4653) [#5010](https://github.com/wazuh/wazuh-dashboard-plugins/pull/5010)
 - Fixed `WAZUH_PROTOCOL` suggestion in the 'Deploy new agent' section. [#4849](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4849)
 - Fixed agent deployment instructions for HP-UX and Solaris. [#4943](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4943)
@@ -912,7 +912,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 ### Fixed
 
 - Wazuh.yml review: fixed link to web documentation, improved in-file documentation and fixed some grammatical errors. [#4378](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4378) [#4399](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4399)
-- Fixed an error during the generation of a group's report, if the request to the Wazuh API fails [#4350](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4350)
+- Fixed an error during the generation of a group's report, if the request to the BOSSS XDR API fails [#4350](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4350)
 - Fixed a problem with the group's report, when the group has no agents [#4350](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4350)
 - Fixed path in logo customization section [#4352](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4352)
 - Fixed a TypeError in Firefox. Change the Get request that was made with a Kibana core.http.get(/api/check-wazuh) resource to the WzRequest.genericReq resource and it no longer fails, also add a test capture to public/plugin.ts that wraps the request and in case of failure, the error is detected when the browser does not work with the V8 engine. [#4362](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4362)
@@ -923,7 +923,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 ### Removed
 
-- Removed the use of `manager_host` field related to agent information of Wazuh API responses, which is obsolete [#4350](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4350)
+- Removed the use of `manager_host` field related to agent information of BOSSS XDR API responses, which is obsolete [#4350](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4350)
 
 ## Wazuh v4.3.6 - OpenSearch Dashboards 1.2.0 - Revision 4307
 
@@ -958,7 +958,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Removed a logged error that appeared when the `statistics` tasks tried to create an index with the same name, causing the second task to fail on the creation of the index because it already exists [#4235](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4235)
 - Fixed a UI crash due to a query with syntax errors in `Modules/Security events` [#4237](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4237)
 - Fixed an error when generating a module report after changing the selected agent [#4240](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4240)
-- Fixed an unhandled error when a Wazuh API request failed in the dev tools [#4266](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4266)
+- Fixed an unhandled error when a BOSSS XDR API request failed in the dev tools [#4266](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4266)
 - Fixed an error related to `API not available` when saving the manager configuration and restarting the manager from `Management/Configuration/Edit configuration` on manager mode [#4264](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4264)
 - Fixed a UI problem that required scrolling to see the logs in Management/Logs and Settings/Logs [#4253](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4253)
 
@@ -988,7 +988,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 ### Fixed
 
-- Fixed Wazuh Dashboard troubleshooting url [#4151](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4151)
+- Fixed BOSSS XDR Dashboard troubleshooting url [#4151](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4151)
 
 ## Wazuh v4.3.2 - OpenSearch Dashboards 1.2.0 - Revision 4303
 
@@ -1117,7 +1117,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fix the pinned filters were removed when accessing to the `Panel` tab of a module [#3565](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3565)
 - Fixed multi-select component searcher handler [#3645](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3645)
 - Fixed order logs properly in Management/Logs [#3609](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3609)
-- Fixed the Wazuh API requests to `GET //` [#3661](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3661)
+- Fixed the BOSSS XDR API requests to `GET //` [#3661](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3661)
 - Fixed missing mitre tactics [#3675](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3675)
 - Fix CDB list view not working with IPv6 [#3488](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3488)
 - Fixed the bad requests using Console tool to `PUT /active-response` API endpoint [#3466](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3466)
@@ -1160,7 +1160,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed routing redirection in events documents discover links [#3866](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3866)
 - Fixed health-check [#3868](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3868)
 - Fixed refreshing agents evolution visualization [#3894](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3894)
-- Fixed an error when generating PDF reports due to Wazuh API token expiration [#3881](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3881)
+- Fixed an error when generating PDF reports due to BOSSS XDR API token expiration [#3881](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3881)
 - Fixed the table of Vulnerabilities/Inventory doesn't reload when changing the selected agent [#3901](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3901)
 - Fixed backslash breaking exported JSON result [#3909](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3909)
 - Fixed the Events view multiple "The index pattern was refreshed successfully" toast [#3937](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3937)
@@ -1169,7 +1169,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed the `rule.mitre.id` cell enhancement that doesn't support values with sub techniques [#3944](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3944)
 - Fixed error not working the alerts displayed when changing the selected time in some flyouts [#3947](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3947) [#4115](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4115)
 - Fixed the user can not logout when the Kibana server has a basepath configurated [#3957](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3957)
-- Fixed fatal cron-job error when Wazuh API is down [#3991](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3991)
+- Fixed fatal cron-job error when BOSSS XDR API is down [#3991](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3991)
 - Fixed circular re-directions when API errors are handled [#4079](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4079)
 - Fixed agent breadcrumb routing minor error [#4101](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4101)
 - Fixed selected text not visible in API Console [#4102](https://github.com/wazuh/wazuh-dashboard-plugins/pull/4102)
@@ -1231,7 +1231,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Improvement to hide navbar Wazuh label. [#3240](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3240)
 - Add modal creating new rule/decoder [#3274](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3274)
 - New functionality to change app logos [#3503](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3503)
-- Added link to the upgrade guide when the Wazuh API version and the Wazuh App version mismatch [#3592](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3592)
+- Added link to the upgrade guide when the BOSSS XDR API version and the Wazuh App version mismatch [#3592](https://github.com/wazuh/wazuh-dashboard-plugins/pull/3592)
 
 ### Changed
 
@@ -1426,10 +1426,10 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Can't edit empty rules and decoders files that already exist in the manager [#2978](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2978)
 - Support for alerts index pattern with different ID and name [#2979](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2979)
 - Fix the unpin agent in the selection modal [#2980](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2980)
-- Fix properly logout of Wazuh API when logging out of the application (only for OpenDistro) [#2789](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2789)
+- Fix properly logout of BOSSS XDR API when logging out of the application (only for OpenDistro) [#2789](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2789)
 - Fixed missing `&&` from macOS agent deployment command [#2989](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2989)
 - Fix prompt permissions on Framework of Mitre and Inventory of Integrity monitoring. [#2967](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2967)
-- Fix properly logout of Wazuh API when logging out of the application support x-pack [#2789](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2789)
+- Fix properly logout of BOSSS XDR API when logging out of the application support x-pack [#2789](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2789)
 
 ## Wazuh v4.1.0 - Kibana 7.10.0 , 7.10.2 - Revision 4101
 
@@ -1453,7 +1453,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fixed wrong hover texts in CDB lists actions [#2929](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2929)
 - Fixed access to forbidden agents information when exporting agents listt [2918](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2918)
 - Fix the decoder detail view is not displayed [#2888](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2888)
-- Fix the complex search using the Wazuh API query filter in search bars [#2930](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2930)
+- Fix the complex search using the BOSSS XDR API query filter in search bars [#2930](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2930)
 - Fixed validation to check userPermissions are not ready yet [#2931](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2931)
 - Fixed clear visualizations manager list when switching tabs. Fixes PDF reports filters [#2932](https://github.com/wazuh/wazuh-dashboard-plugins/pull/2932)
 - Fix Strange box shadow in Export popup panel in Managment > Groups [#2886](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2886)
@@ -1494,7 +1494,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 ### Changed
 
-- Replaced `wazuh` Wazuh API user by `wazuh-wui` in the default configuration [#2852](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2852)
+- Replaced `wazuh` BOSSS XDR API user by `wazuh-wui` in the default configuration [#2852](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2852)
 - Add agent id to the reports name in Agent Inventory and Modules [#2817](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2817)
 
 ### Adapt for Kibana 7.10.0
@@ -1591,7 +1591,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Alerts summary table for PDF reports on all modules [#2632](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2632)
 - [4.0-7.9] Run as with no wazuh-wui API user [#2576](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2576)
 - Deploy a new agent interface as default interface [#2564](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2564)
-- Problem in the visualization of new reserved resources of the Wazuh API [#2643](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2643)
+- Problem in the visualization of new reserved resources of the BOSSS XDR API [#2643](https://github.com/wazuh/wazuh-dashboard-plugins/issues/2643)
 
 ### Fixed
 
@@ -2171,7 +2171,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Added resizable columns by dragging in tables ([d2bf8ee](https://github.com/wazuh/wazuh-dashboard-plugins/commit/d2bf8ee9681ca5d6028325e165854b49214e86a3))
 - Added a cron job for fetching missing fields of all valid index patterns, also merging dynamic fields every time an index pattern is refreshed by the app ([#1276](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1276)).
 - Added auto-merging dynamic fields for Wazuh monitoring index patterns ([#1300](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1300))
-- New server module, it's a job queue so we can add delayed jobs to be run in background, this iteration only accepts delayed Wazuh API calls ([#1283](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1283)).
+- New server module, it's a job queue so we can add delayed jobs to be run in background, this iteration only accepts delayed BOSSS XDR API calls ([#1283](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1283)).
 - Added new way to view logs using a logs viewer ([#1292](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1292))
 - Added new directive for registering agents from the UI, including instructions on "how to" ([#1321](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1321)).
 - Added some Angular charts in Agents Preview and Agents SCA sections ([#1364](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1364))
@@ -2201,7 +2201,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Replaced Management > Logs table with a log viewer component ([#1292](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1292)).
 - The agents list search bar now allows to switch between AND/OR operators ([#1291](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1291)).
 - Improve audit dashboards ([#1374](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1374))
-- Exclude agent "000" getting the last registered and the most active agents from the Wazuh API.([#1391](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1391))
+- Exclude agent "000" getting the last registered and the most active agents from the BOSSS XDR API.([#1391](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1391))
 - Reviewed Osquery dashboards ([#1394](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1394))
 - Memory info is now a log ([#1400](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1400))
 - Error toasters time is now 30000ms, warning/info are still 6000ms ([#1420](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1420))
@@ -2254,7 +2254,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Excluding managers from wazuh-monitoring indices ([#1177](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1177)).
 - Escape `&` before sending group configuration ([d3aa56f](https://github.com/wazuh/wazuh-dashboard-plugins/commit/d3aa56fa73478c60505e500db7d3a7df263081b5)).
 - Improved `autoFormat` function before rendering group configuration ([f4f8144](https://github.com/wazuh/wazuh-dashboard-plugins/commit/f4f8144eef8b93038fc897a9f16356e71029b844)).
-- Now the group configuration editor doesn't exit after sending data to the Wazuh API ([5c1a3ef](https://github.com/wazuh/wazuh-dashboard-plugins/commit/5c1a3ef9bd710a7befbed0709c4a7cf414f44f6b)).
+- Now the group configuration editor doesn't exit after sending data to the BOSSS XDR API ([5c1a3ef](https://github.com/wazuh/wazuh-dashboard-plugins/commit/5c1a3ef9bd710a7befbed0709c4a7cf414f44f6b)).
 
 ### Fixed
 
@@ -2311,7 +2311,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Fix Dev-tools behavior when parse json invalid blocks ([#1102](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1102)).
 - Fixed Management > Monitoring tab frustration adding back buttons ([#1102](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1102)).
 - Fix template checking when using more than one pattern ([#1104](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1104)).
-- Fix infinite loop for Wazuh monitoring when the Wazuh API is not being able to give us all the agents ([5a26916](https://github.com/wazuh/wazuh-dashboard-plugins/commit/5a2691642b40a34783d2eafb6ee24ae78b9af21a)), ([85005a1](https://github.com/wazuh/wazuh-dashboard-plugins/commit/85005a184d4f1c3d339b7c895b5d2469f3b45171)).
+- Fix infinite loop for Wazuh monitoring when the BOSSS XDR API is not being able to give us all the agents ([5a26916](https://github.com/wazuh/wazuh-dashboard-plugins/commit/5a2691642b40a34783d2eafb6ee24ae78b9af21a)), ([85005a1](https://github.com/wazuh/wazuh-dashboard-plugins/commit/85005a184d4f1c3d339b7c895b5d2469f3b45171)).
 - Fix rule details for `list` and `info` parameters ([#1149](https://github.com/wazuh/wazuh-dashboard-plugins/pull/1149)).
 
 ## Wazuh v3.7.1 / v3.7.2 - Kibana v6.5.1 / v6.5.2 / v6.5.3 / v6.5.4 - Revision 415
@@ -2382,7 +2382,7 @@ All notable changes to the Wazuh app project will be documented in this file.
   - This will prevent situations where the user couldn't check the inventory although there was actual scan data to show on some sections.
 - Added support for new multigroups feature ([#911](https://github.com/wazuh/wazuh-dashboard-plugins/pull/911)):
   - Now the information bars on _Agents_ will show all the groups an agent belongs to.
-- Now the result pane on the _Dev tools_ tab will show the error code coming from the Wazuh API ([#909](https://github.com/wazuh/wazuh-dashboard-plugins/pull/909)).
+- Now the result pane on the _Dev tools_ tab will show the error code coming from the BOSSS XDR API ([#909](https://github.com/wazuh/wazuh-dashboard-plugins/pull/909)).
 - Changed some visualizations titles for _Overview/Agents > OpenSCAP_ tab ([#925](https://github.com/wazuh/wazuh-dashboard-plugins/pull/925)).
 - All backend routes have been renamed ([#932](https://github.com/wazuh/wazuh-dashboard-plugins/pull/932)).
 - Several improvements for Elasticsearch tests ([#933](https://github.com/wazuh/wazuh-dashboard-plugins/pull/933)).
@@ -2590,8 +2590,8 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Now any agent can go to the _Inventory_ tab regardless if it's enabled or not. The content will change properly according to the agent configuration ([#744](https://github.com/wazuh/wazuh-dashboard-plugins/pull/744)).
 - Updated the `angular-material` dependency to `1.1.10` ([#743](https://github.com/wazuh/wazuh-dashboard-plugins/pull/743)).
 - Any API entry is now removable regardless if it's the only one API entry ([#740](https://github.com/wazuh/wazuh-dashboard-plugins/pull/740)).
-- Performance has been improved regarding to agents status, they are now being fetched using _distinct_ routes from the Wazuh API ([#738](https://github.com/wazuh/wazuh-dashboard-plugins/pull/738)).
-- Improved the way we are parsing some Wazuh API errors regarding to version mismatching ([#735](https://github.com/wazuh/wazuh-dashboard-plugins/pull/735)).
+- Performance has been improved regarding to agents status, they are now being fetched using _distinct_ routes from the BOSSS XDR API ([#738](https://github.com/wazuh/wazuh-dashboard-plugins/pull/738)).
+- Improved the way we are parsing some BOSSS XDR API errors regarding to version mismatching ([#735](https://github.com/wazuh/wazuh-dashboard-plugins/pull/735)).
 
 ### Fixed
 
@@ -2619,14 +2619,14 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 - Fixed the top menu API indicator when checking the API connection and the manager/cluster information had been changed ([#668](https://github.com/wazuh/wazuh-dashboard-plugins/pull/668)).
 - Fixed our logger module which was not writting logs the very first time Kibana is started neither after a log rotation ([#667](https://github.com/wazuh/wazuh-dashboard-plugins/pull/667)).
-- Fixed a regular expression in the server side when parsing URLs before registering a new Wazuh API ([#690](https://github.com/wazuh/wazuh-dashboard-plugins/pull/690)).
+- Fixed a regular expression in the server side when parsing URLs before registering a new BOSSS XDR API ([#690](https://github.com/wazuh/wazuh-dashboard-plugins/pull/690)).
 - Fixed filters from specific visualization regarding to _File integrity_ section ([#694](https://github.com/wazuh/wazuh-dashboard-plugins/pull/694)).
 - Fixed filters parsing when generating a report because it was not parsing negated filters as expected ([#696](https://github.com/wazuh/wazuh-dashboard-plugins/pull/696)).
 - Fixed visualization counter from _OSCAP_ tab ([#722](https://github.com/wazuh/wazuh-dashboard-plugins/pull/722)).
 
 ### Removed
 
-- Temporary removed CSV download from agent inventory section due to Wazuh API bug ([#727](https://github.com/wazuh/wazuh-dashboard-plugins/pull/727)).
+- Temporary removed CSV download from agent inventory section due to BOSSS XDR API bug ([#727](https://github.com/wazuh/wazuh-dashboard-plugins/pull/727)).
 
 ## Wazuh v3.3.0/v3.3.1 - Kibana v6.3.0 - Revision 398
 
@@ -2774,7 +2774,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 - Replaced the usage of `$rootScope` with two new factories, along with more controller improvements ([#525](https://github.com/wazuh/wazuh-dashboard-plugins/pull/525)).
 - Now the _Extensions_ tab on _Settings_ won't edit the `.wazuh` index to modify the extensions configuration for all users ([#545](https://github.com/wazuh/wazuh-dashboard-plugins/pull/545)).
   - This allows each new user to always start with the base extensions configuration, and modify it to its needs storing the settings on a browser cookie.
-- Now the GDPR requirements description on its tab won't be loaded if the Wazuh API version is not v3.2.3 or higher ([#546](https://github.com/wazuh/wazuh-dashboard-plugins/pull/546)).
+- Now the GDPR requirements description on its tab won't be loaded if the BOSSS XDR API version is not v3.2.3 or higher ([#546](https://github.com/wazuh/wazuh-dashboard-plugins/pull/546)).
 
 ### Fixed
 
@@ -2826,7 +2826,7 @@ All notable changes to the Wazuh app project will be documented in this file.
   - The Detail view gives you a summary of the node's healthcheck.
 - Brand-new tab - _Dev tools_ ([#449](https://github.com/wazuh/wazuh-dashboard-plugins/pull/449)):
   - Find it on the top navbar, next to _Discover_.
-  - Execute Wazuh API requests directly from the app.
+  - Execute BOSSS XDR API requests directly from the app.
   - This tab uses your currently selected API from _Settings_.
   - You can type different API requests on the input window, select one with the cursor, and click on the Play button to execute it.
   - You can also type comments on the input window.
@@ -2840,7 +2840,7 @@ All notable changes to the Wazuh app project will be documented in this file.
   - The default frequency time has been increased to 1 hour.
   - When disabled, useful metrics will appear on _Overview/General_ replacing the _Agent status_ visualization.
 - Added CSV exporting button to the app ([#431](https://github.com/wazuh/wazuh-dashboard-plugins/pull/431)):
-  - Implemented new logic to fetch data from the Wazuh API and download it in CSV format.
+  - Implemented new logic to fetch data from the BOSSS XDR API and download it in CSV format.
   - Currently available for the _Ruleset_, _Logs_ and _Groups_ sections on the _Manager_ tab and also the _Agents_ tab.
 - More refactoring to the app backend ([#439](https://github.com/wazuh/wazuh-dashboard-plugins/pull/439)):
   - Standardized error output from the server side.
@@ -2863,8 +2863,8 @@ All notable changes to the Wazuh app project will be documented in this file.
 
 - Changed OSCAP visualization to avoid clipping issues with large agent names ([#429](https://github.com/wazuh/wazuh-dashboard-plugins/pull/429)).
 - Now the related Rules or Decoders sections on _Manager/Ruleset_ will remain hidden if there isn't any data to show or while it's loading ([#434](https://github.com/wazuh/wazuh-dashboard-plugins/pull/434)).
-- Added a 200ms delay when fetching iterable data from the Wazuh API ([#445](https://github.com/wazuh/wazuh-dashboard-plugins/pull/445) & [#450](https://github.com/wazuh/wazuh-dashboard-plugins/pull/450)).
-- Fixed several bugs related to Wazuh API timeout/cancelled requests ([#445](https://github.com/wazuh/wazuh-dashboard-plugins/pull/445)).
+- Added a 200ms delay when fetching iterable data from the BOSSS XDR API ([#445](https://github.com/wazuh/wazuh-dashboard-plugins/pull/445) & [#450](https://github.com/wazuh/wazuh-dashboard-plugins/pull/450)).
+- Fixed several bugs related to BOSSS XDR API timeout/cancelled requests ([#445](https://github.com/wazuh/wazuh-dashboard-plugins/pull/445)).
 - Added `ENOTFOUND`, `EHOSTUNREACH`, `EINVAL`, `EAI_AGAIN` options for API URL parameter checking ([#463](https://github.com/wazuh/wazuh-dashboard-plugins/pull/463)).
 - Now the _Settings/Extensions_ subtab won't appear unless there's at least one API inserted ([#465](https://github.com/wazuh/wazuh-dashboard-plugins/pull/465)).
 - Now the index pattern selector on _Settings/Pattern_ will also refresh the known fields when changing it ([#477](https://github.com/wazuh/wazuh-dashboard-plugins/pull/477)).
@@ -3115,7 +3115,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 ### Fixed
 
 - Fixed wrong data flow on _Agents/General_ when coming from and going to the _Groups_ tab ([#273](https://github.com/wazuh/wazuh-dashboard-plugins/pull/273)).
-- Fixed sorting on tables, now they use the sorting functionality provided by the Wazuh API ([#274](https://github.com/wazuh/wazuh-dashboard-plugins/pull/274)).
+- Fixed sorting on tables, now they use the sorting functionality provided by the BOSSS XDR API ([#274](https://github.com/wazuh/wazuh-dashboard-plugins/pull/274)).
 - Fixed column width issues on some tables ([#274](https://github.com/wazuh/wazuh-dashboard-plugins/pull/274)).
 - Fixed bug in the _Agent configuration_ JSON viewer who didn't properly show the full group configuration ([#276](https://github.com/wazuh/wazuh-dashboard-plugins/pull/276)).
 - Fixed excessive loading time from some Audit visualizations ([#278](https://github.com/wazuh/wazuh-dashboard-plugins/pull/278)).
@@ -3181,7 +3181,7 @@ All notable changes to the Wazuh app project will be documented in this file.
 ### Fixed
 
 - Several CSS bugfixes for better compatibility with Kibana 6.2.1.
-- Some variables changed for adapting new Wazuh API requests.
+- Some variables changed for adapting new BOSSS XDR API requests.
 - Better error handling for some Elastic-related messages.
 - Fixed browser console error from top-menu directive.
 - Removed undesired md-divider from Manager/Logs.

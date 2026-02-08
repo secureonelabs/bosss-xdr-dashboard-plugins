@@ -2,7 +2,7 @@
   "name": "osd-dev-scripts",
   "private": true,
   "version": "0.0.0",
-  "description": "Wazuh Dashboard dev helper scripts",
+  "description": "BOSSS XDR Dashboard dev helper scripts",
   "license": "UNLICENSED",
   "type": "commonjs",
   "dependencies": {

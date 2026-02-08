@@ -1,7 +1,7 @@
 /**
  * @fileoverview This file provides a Higher Order Component (HOC) to validate
  * and manage index patterns related to Security Configuration Assessment (SCA)
- * in Wazuh Dashboard.
+ * in BOSSS XDR Dashboard.
  * @module components/agents/sca/hocs/validate-sca-states-index-pattern
  */
 

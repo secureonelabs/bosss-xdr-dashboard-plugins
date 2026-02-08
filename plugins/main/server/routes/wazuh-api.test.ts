@@ -21,8 +21,8 @@ function buildAxiosOptions(
   };
 }
 
-describe.skip('Wazuh API', () => {
-  describe('Wazuh API - /api/login', () => {
+describe.skip('BOSSS XDR API', () => {
+  describe('BOSSS XDR API - /api/login', () => {
     test('[200] Returns a token in the response and set cookies', () => {
       const options = buildAxiosOptions('post', '/api/login', {
         idHost: 'default',
@@ -40,7 +40,7 @@ describe.skip('Wazuh API', () => {
     });
   });
 
-  describe('Wazuh API - /api/check-api', () => {
+  describe('BOSSS XDR API - /api/check-api', () => {
     test('[200] Check default api returns manager, node, cluster, status and allow_run_as params', () => {
       const options = buildAxiosOptions('post', '/api/check-api', {
         id: 'default',
@@ -77,7 +77,7 @@ describe.skip('Wazuh API', () => {
     });
   });
 
-  describe('Wazuh API - /api/check-stored-api', () => {
+  describe('BOSSS XDR API - /api/check-stored-api', () => {
     test('[200] Check default api returns manager, node, cluster, status and allow_run_as params', () => {
       const options = buildAxiosOptions('post', '/api/check-stored-api', {
         id: 'default',
@@ -121,7 +121,7 @@ describe.skip('Wazuh API', () => {
     });
   });
 
-  describe('Wazuh API - /api/request', () => {
+  describe('BOSSS XDR API - /api/request', () => {
     let userToken = null;
     beforeAll(() => {
       const optionsAuthenticate = buildAxiosOptions('post', '/api/login', {
@@ -185,7 +185,7 @@ describe.skip('Wazuh API', () => {
     });
   });
 
-  describe('Wazuh API - /api/routes', () => {
+  describe('BOSSS XDR API - /api/routes', () => {
     test('[200] Returns the routes', () => {
       const options = buildAxiosOptions('get', '/api/routes', {});
       return axios(options)
@@ -210,7 +210,7 @@ describe.skip('Wazuh API', () => {
     });
   });
 
-  describe('Wazuh API - /api/setup', () => {
+  describe('BOSSS XDR API - /api/setup', () => {
     test('[200] Returns the app setup', () => {
       const options = buildAxiosOptions('get', '/api/setup');
       return axios(options)

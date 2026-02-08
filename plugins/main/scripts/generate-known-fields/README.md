@@ -4,7 +4,7 @@ This directory contains scripts to automatically generate known fields from the 
 
 ## Overview
 
-The known fields are used by the Wazuh Dashboard to ensure that all fields used in visualizations and data grids are available during index pattern creation, even when the underlying indices don't exist yet.
+The known fields are used by the BOSSS XDR Dashboard to ensure that all fields used in visualizations and data grids are available during index pattern creation, even when the underlying indices don't exist yet.
 
 Previously, these fields were manually maintained, which could lead to synchronization issues when field definitions changed in the Wazuh server. This automated approach ensures the fields are always up-to-date with the official templates.
 

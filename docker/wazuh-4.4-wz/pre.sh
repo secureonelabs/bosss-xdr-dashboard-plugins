@@ -60,7 +60,7 @@ patch_version=$2
 cat <<EOF >config/imposter/api_info.json
 {
   "data": {
-    "title": "Wazuh API REST",
+    "title": "BOSSS XDR API REST",
     "api_version": "4.4.${patch_version}",
     "revision": 40316,
     "license_name": "GPL 2.0",
@@ -90,16 +90,16 @@ up)
 	echo "1. Uninstall current version of the Wazuh app:"
 	echo "docker exec -ti ${COMPOSE_PROJECT_NAME}-wazuh.dashboard-1  /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin remove wazuh"
 	echo
-	echo "2. Restart Wazuh Dashboard:"
+	echo "2. Restart BOSSS XDR Dashboard:"
 	echo "docker restart ${COMPOSE_PROJECT_NAME}-wazuh.dashboard-1"
 	echo
-	echo "3. Copy the pre-release package to the running Wazuh Dashboard container:"
+	echo "3. Copy the pre-release package to the running BOSSS XDR Dashboard container:"
 	echo docker cp wazuh-4.4.${patch_version}-1.zip ${COMPOSE_PROJECT_NAME}-wazuh.dashboard-1:/tmp
 	echo
 	echo "4. Install the package we have just uploaded:"
 	echo "docker exec -ti  ${COMPOSE_PROJECT_NAME}-wazuh.dashboard-1  /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin install file:///tmp/wazuh-4.4.${patch_version}-1.zip"
 	echo
-	echo "5. Restart the Wazuh Dashboard container:"
+	echo "5. Restart the BOSSS XDR Dashboard container:"
 	echo "docker restart ${COMPOSE_PROJECT_NAME}-wazuh.dashboard-1"
 	echo
 	echo "6. Upload the Wazuh app configuration:"

@@ -7,7 +7,7 @@ manage the configuration and capabilities of the Wazuh server.
 ## Description
 
 This plugin for Wazuh dashboard allows you to visualize and analyze Wazuh alerts stored in
-the Wazuh Indexer. The plugin provides the following capabilities:
+the BOSSS XDR Indexer. The plugin provides the following capabilities:
 
 - Search alerts classified by modules and filter them using the different views. You will be able to explore the alerts both at Wazuh cluster level, and in a particular agent. The modules, divided into the following use cases, are:
   - Security Information Management
@@ -36,7 +36,7 @@ the Wazuh Indexer. The plugin provides the following capabilities:
 - Manage your groups of agents.
 - Check the status and logs of your Wazuh cluster.
 - Manage your agents, as well as see their configuration and data inventory. You can also deploy new agents.
-- Explore and interact with the Wazuh API through our Dev Tools.
+- Explore and interact with the BOSSS XDR API through our Dev Tools.
 
 ## Software and libraries used
 

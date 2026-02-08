@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Wazuh Dashboard Plugins repository bumper (Pure Shell Version)
+# BOSSS XDR Dashboard Plugins repository bumper (Pure Shell Version)
 # This script automates version and stage bumping across the repository using only shell commands.
 # Compatible with macOS and Linux systems.
 

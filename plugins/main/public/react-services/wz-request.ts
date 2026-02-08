@@ -246,7 +246,7 @@ export class WzRequest {
   }
 
   /**
-   * Perform a request to the Wazuh API
+   * Perform a request to the BOSSS XDR API
    * @param {String} method Eg. GET, PUT, POST, DELETE
    * @param {String} path API route
    * @param {Object} body Request body

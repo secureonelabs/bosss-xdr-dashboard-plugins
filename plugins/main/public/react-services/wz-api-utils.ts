@@ -1,5 +1,5 @@
 /*
- * Wazuh app - Wazuh API utils service
+ * Wazuh app - BOSSS XDR API utils service
  * Copyright (C) 2015-2022 Wazuh, Inc.
  *
  * This program is free software; you can redistribute it and/or modify

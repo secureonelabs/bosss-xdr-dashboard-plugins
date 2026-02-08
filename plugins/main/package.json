@@ -1,5 +1,5 @@
 {
-  "name": "wazuh",
+  "name": "bosss-xdr",
   "version": "5.0.0",
   "revision": "00",
   "pluginPlatform": {
@@ -11,7 +11,7 @@
     "wazuh",
     "ossec"
   ],
-  "author": "Wazuh, Inc",
+  "author": "SecureOneLabs",
   "license": "GPL-2.0",
   "resolutions": {
     "**/es5-ext": "^0.10.63",

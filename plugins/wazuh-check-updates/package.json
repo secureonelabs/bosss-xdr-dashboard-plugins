@@ -1,5 +1,5 @@
 {
-  "name": "wazuh-check-updates",
+  "name": "bosss-xdr-check-updates",
   "version": "5.0.0",
   "revision": "00",
   "pluginPlatform": {

@@ -67,7 +67,7 @@ function generateRandomUser() {
     'Local Administrator',
     'Software Developer',
     'Technical Support',
-    'Wazuh Agent Service',
+    'BOSSS XDR Agent Service',
     'Backup Service Account',
     'System Service',
     'Web Service Account',

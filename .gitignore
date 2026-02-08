@@ -94,3 +94,6 @@ bin/
 site-packages/
 lib64
 pyvenv.cfg
+
+# Rebranding script output
+REBRAND_REPORT.json

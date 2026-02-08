@@ -1,5 +1,5 @@
 {
-  "name": "wazuh-kibana-app-automation",
+  "name": "bosss-xdr-kibana-app-automation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,7 +26,7 @@
     "cypress:report": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json && marge cypress/report/output.json --reportDir ./cypress/report --inline",
     "delete:reports": "rm -r cypress/report/* || true"
   },
-  "author": "",
+  "author": "SecureOneLabs",
   "license": "ISC",
   "dependencies": {
     "cosmiconfig": "^4.0.0",

@@ -1,5 +1,5 @@
 // Lightweight HTTP request mode for CodeMirror
-// Inspired by CodeMirror modes, adapted for Wazuh API Console DSL
+// Inspired by CodeMirror modes, adapted for BOSSS XDR API Console DSL
 // Supports lines like:
 //   # Comment
 //   GET /agents?status=active

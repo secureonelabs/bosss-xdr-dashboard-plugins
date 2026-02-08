@@ -29,7 +29,7 @@ Exists the following error sources:
 # Error sources
 
 - Operational errors (development) - Native javascript errors
-- Wazuh API errors
+- BOSSS XDR API errors
 - Indexer Error
 - Http errors
 - Etc

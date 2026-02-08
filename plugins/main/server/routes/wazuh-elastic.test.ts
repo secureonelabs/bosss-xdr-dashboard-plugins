@@ -22,7 +22,7 @@ function buildAxiosOptions(
 }
 
 describe.skip('Wazuh Elastic', () => {
-  describe('Wazuh API - /elastic/security/current-platform', () => {
+  describe('BOSSS XDR API - /elastic/security/current-platform', () => {
     test('[200] Returns the current security platform as string or boolean', () => {
       const options = buildAxiosOptions(
         'get',
@@ -39,7 +39,7 @@ describe.skip('Wazuh Elastic', () => {
   });
 
   // TODO: This test need to be defined
-  // describe('Wazuh API - /elastic/visualizations/{tab}/{pattern}', () => {
+  // describe('BOSSS XDR API - /elastic/visualizations/{tab}/{pattern}', () => {
   //   test('[200] Returns an array with the index patterns', () => {
   //     const options = buildAxiosOptions('get', '/elastic/visualizations/{tab}/{pattern}');
   //     return axios(options).then(response => {
@@ -55,7 +55,7 @@ describe.skip('Wazuh Elastic', () => {
   // });
 
   // TODO: This test need to be defined
-  // describe('Wazuh API - /elastic/visualizations/{tab}/{pattern}', () => {
+  // describe('BOSSS XDR API - /elastic/visualizations/{tab}/{pattern}', () => {
   //   test('[200] Returns an array with the index patterns', () => {
   //     const options = buildAxiosOptions('post', '/elastic/visualizations/{tab}/{pattern}');
   //     return axios(options).then(response => {
@@ -70,7 +70,7 @@ describe.skip('Wazuh Elastic', () => {
   //   });
   // });
 
-  describe('Wazuh API - /elastic/template/{pattern}', () => {
+  describe('BOSSS XDR API - /elastic/template/{pattern}', () => {
     test('[200] Check if there is some template with the pattern', () => {
       const options = buildAxiosOptions(
         'get',
@@ -85,7 +85,7 @@ describe.skip('Wazuh Elastic', () => {
   });
 
   // TODO: This test need to be defined
-  // describe('Wazuh API - /elastic/top/{mode}/{cluster}/{field}/{pattern}', () => {
+  // describe('BOSSS XDR API - /elastic/top/{mode}/{cluster}/{field}/{pattern}', () => {
   //   test('[200] Check if there an index pattern with the pattern', () => {
   //     const options = buildAxiosOptions('get', '/elastic/top/{mode}/{cluster}/{field}/{pattern}');
   //     return axios(options).then(response => {
@@ -94,7 +94,7 @@ describe.skip('Wazuh Elastic', () => {
   //   });
   // });
 
-  describe('Wazuh API - /elastic/samplealerts', () => {
+  describe('BOSSS XDR API - /elastic/samplealerts', () => {
     test('[200] Check if there an sample data indices', () => {
       const options = buildAxiosOptions('get', '/elastic/samplealerts');
       return axios(options).then(response => {
@@ -104,7 +104,7 @@ describe.skip('Wazuh Elastic', () => {
     });
   });
 
-  describe('Wazuh API - /elastic/samplealerts/{category}', () => {
+  describe('BOSSS XDR API - /elastic/samplealerts/{category}', () => {
     test('[200] Check if there an sample data index of Security category', () => {
       const options = buildAxiosOptions(
         'get',
@@ -142,7 +142,7 @@ describe.skip('Wazuh Elastic', () => {
     });
   });
 
-  describe('Wazuh API - /elastic/samplealerts/{category}', () => {
+  describe('BOSSS XDR API - /elastic/samplealerts/{category}', () => {
     let userToken = null;
     beforeAll(() => {
       const optionsAuthenticate = buildAxiosOptions('post', '/api/login', {

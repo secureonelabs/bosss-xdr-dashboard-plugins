@@ -8,16 +8,16 @@ import { getErrorOrchestrator } from '../../../react-services/common-services';
 import { UI_ERROR_SEVERITIES } from '../../../react-services/error-orchestrator/types';
 
 /**
- * Retrieves the Wazuh API version by making a GET request to the root endpoint.
+ * Retrieves the BOSSS XDR API version by making a GET request to the root endpoint.
  *
  * @param context - A string representing the context in which the API version is being requested. Used for error logging.
- * @returns A promise that resolves to the Wazuh API version as a string (e.g., "4.14.0"), or `undefined` if the request fails.
+ * @returns A promise that resolves to the BOSSS XDR API version as a string (e.g., "4.14.0"), or `undefined` if the request fails.
  *
  * @example
  * // Example response:
  * {
  *   "data": {
- *     "title": "Wazuh API REST",
+ *     "title": "BOSSS XDR API REST",
  *     "api_version": "4.14.0",
  *     "revision": 1,
  *     "license_name": "GPL 2.0",

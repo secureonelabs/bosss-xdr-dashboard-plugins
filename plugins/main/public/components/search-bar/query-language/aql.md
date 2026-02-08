@@ -2,7 +2,7 @@
 
 # Query Language - AQL
 
-AQL (API Query Language) is a query language based in the `q` query parameters of the Wazuh API
+AQL (API Query Language) is a query language based in the `q` query parameters of the BOSSS XDR API
 endpoints.
 
 Documentation: https://wazuh.com/<major_version>.<minor_version>/user-manual/api/queries.html
@@ -176,7 +176,7 @@ implicitQuery: 'id!=000;'
 graph TD;
     user_input[User input]-->tokenizer;
     subgraph tokenizer
-        tokenize_regex[Wazuh API `q` regular expression]
+        tokenize_regex[BOSSS XDR API `q` regular expression]
     end
 
     tokenizer-->tokens;

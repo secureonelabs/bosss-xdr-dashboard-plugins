@@ -59,7 +59,7 @@ patch_version=$2
 cat << EOF > config/imposter/api_info.json
 {
   "data": {
-    "title": "Wazuh API REST",
+    "title": "BOSSS XDR API REST",
     "api_version": "4.2.${patch_version}",
     "revision": 40316,
     "license_name": "GPL 2.0",

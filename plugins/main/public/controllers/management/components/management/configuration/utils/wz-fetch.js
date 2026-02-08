@@ -211,7 +211,7 @@ export const checkDaemons = async () => {
 };
 
 /**
- * Make ping to Wazuh API
+ * Make ping to BOSSS XDR API
  * @param updateWazuhNotReadyYet
  * @param {number} [tries=30] Tries
  * @return {Promise}

@@ -7,7 +7,7 @@ import NavigationService from '../../react-services/navigation-service';
 
 /**
  * Options for the syncPinnedAgentSources method
- * @param forceUpdate - Force the update of the pinned agent with a Wazuh API request
+ * @param forceUpdate - Force the update of the pinned agent with a BOSSS XDR API request
  */
 type TsyncPinnedAgentSourcesOptions = {
   forceUpdate?: boolean;

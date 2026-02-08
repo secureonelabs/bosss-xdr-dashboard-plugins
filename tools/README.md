@@ -2,7 +2,7 @@
 
 ## repository_bumper.sh
 
-The `repository_bumper.sh` script is a utility designed to automate version and stage updates across the Wazuh Dashboard Plugins repository. Below is a detailed explanation of its components and usage.
+The `repository_bumper.sh` script is a utility designed to automate version and stage updates across the BOSSS XDR Dashboard Plugins repository. Below is a detailed explanation of its components and usage.
 
 ### Purpose
 
